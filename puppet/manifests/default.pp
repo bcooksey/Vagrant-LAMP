@@ -15,6 +15,9 @@ class vim {
   package {'vim-enhanced':
     ensure => installed
   }
+  package {'git':
+    ensure => installed
+  }
 }
 
 class apache_server {
@@ -28,6 +31,7 @@ class apache_server {
     docroot  => '/var/www/html',
     override => 'All',
   }
+  
   php::module { [ 'mysql', 'ldap', 'pdo' ]: }
 }
 
