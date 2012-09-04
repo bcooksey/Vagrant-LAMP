@@ -22,7 +22,7 @@ class apache_server {
 
   class { 'apache::mod::php': }
 
-  apache::vhost { 'myapp':
+  apache::vhost { 'my-box':
     priority => '1',
     port     => '80',
     docroot  => '/var/www/html',

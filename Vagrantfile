@@ -4,7 +4,7 @@
 Vagrant::Config.run do |config|
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "centOS-6.3"
-  config.vm.host_name = 'vamclo-box'
+  config.vm.host_name = 'my-box'
 
   # Boot with a GUI so you can see the screen. (Default is headless)
   # config.vm.boot_mode = :gui
