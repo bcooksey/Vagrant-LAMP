@@ -32,7 +32,7 @@ class apache_server {
     override => 'All',
   }
   
-  php::module { [ 'mysql', 'ldap', 'pdo' ]: }
+  php::module { [ 'mysql', 'ldap', 'pdo', 'pear' ]: }
 }
 
 class db {
