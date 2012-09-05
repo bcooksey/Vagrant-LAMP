@@ -26,7 +26,7 @@ class dev_env {
         override => 'All',
     }
 
-    php::module { [ 'mysql', 'ldap', 'pdo', 'pear' ]: }
+    php::module { [ 'mysql', 'ldap', 'pdo', 'pear', 'mbstring' ]: }
 
     service { 'iptables':
         ensure => stopped
