@@ -8,13 +8,10 @@ node default {
 }
 
 class dev_tools {
-    package { 'vim-enhanced':
-        ensure => installed
-    }
 
-    package { 'git':
-        ensure => installed
-    }
+    package { 'vim-enhanced': ensure => installed }
+    package { 'git': ensure => installed }
+    package { 'subversion': ensure => installed }
 }
 
 class dev_env {
