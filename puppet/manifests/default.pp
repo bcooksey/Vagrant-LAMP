@@ -5,6 +5,7 @@ node default {
   include dev_tools 
   include dev_env 
   include db
+  include secret_app_setup
 }
 
 class dev_tools {
@@ -26,7 +27,7 @@ class dev_env {
         override => 'All',
     }
 
-    php::module { [ 'mysql', 'ldap', 'pdo', 'pear', 'mbstring' ]: }
+    php::module { [ 'mysql', 'ldap', 'pdo' ]: }
 
     service { 'iptables':
         ensure => stopped
