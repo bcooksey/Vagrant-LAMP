@@ -13,6 +13,7 @@ class dev_tools {
     package { 'vim-enhanced': ensure => installed }
     package { 'git': ensure => installed }
     package { 'subversion': ensure => installed }
+    package { 'man-pages-overrides': ensure => installed }
 }
 
 class dev_env {
