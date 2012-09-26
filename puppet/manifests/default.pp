@@ -28,6 +28,8 @@ class dev_env {
         override => 'All',
     }
 
+    # TODO: Add this command to get newer version of php
+    #     rpm -Uvh http://yum.thelinuxfix.com/RHEL/6/x86_64/tlf-release-1-2.el6.noarch.rpm
     php::module { [ 'mysql', 'ldap', 'pdo' ]: }
 
     service { 'iptables':
